@@ -15,6 +15,8 @@ namespace APIsAndJSON
         public static void KanyeAndRon()
         {
 
+                Thread.Sleep(2000);
+                Console.WriteLine("Kanye and Ron love to talk about the more ethereal side of things; I wonder what they are going to talk about today... \n");
             for (int i = 0; i < 5; i++)
             {
 
@@ -39,8 +41,6 @@ namespace APIsAndJSON
                 var ronQuote = JArray.Parse(ronResponse).First.ToString();
                 //var ronQuote = JArray.Parse(ronResponse).ToString().Replace('[', ' ').Replace(']', ' ').Trim(); -- this is another method to get a similar result.
 
-                Thread.Sleep(2000);
-                Console.WriteLine("Kanye and Ron love to talk about the more ethereal side of things; I wonder what they are going to talk about today... \n");
                 Console.Write(". ");
                 Thread.Sleep(500);
                 Console.Write(". ");
@@ -51,15 +51,15 @@ namespace APIsAndJSON
                 Thread.Sleep(2000);
                 Console.WriteLine($"Ron replies to Kanye, '{ronQuote}'\n\n");
                 Console.Write(". ");
-                Thread.Sleep(500);
+                Thread.Sleep(250);
+                Console.Write(". ");
+                Thread.Sleep(250);
                 Console.Write(". ");
                 Thread.Sleep(500);
-                Console.Write(". ");
-                Thread.Sleep(1000);
-                Console.WriteLine("Man, that was powerful... (sigh)\nI could cry.\n\n");
 
             }
-            Console.WriteLine("---------\n\n\n");
+            Console.WriteLine("Man, that was powerful...\n\n (sigh)\nI could cry.\n\n");
+            Console.WriteLine("------------------------------\n\n\n");
             Thread.Sleep(2000);
             Console.WriteLine("How many conversations with Kanye and Ron would it take to make life just a bit easier?");
             Console.Write(". ");
